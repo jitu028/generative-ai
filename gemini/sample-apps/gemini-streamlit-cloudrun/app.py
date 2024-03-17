@@ -15,7 +15,7 @@ vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 @st.cache_resource
 def load_models():
-    text_model_pro = GenerativeModel("gemini-1.0-pro")
+    text_model_pro = GenerativeModel("gemini-pro")
     multimodal_model_pro = GenerativeModel("gemini-pro-vision")
     return text_model_pro, multimodal_model_pro
 
